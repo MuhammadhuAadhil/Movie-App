@@ -1,16 +1,116 @@
-# React + Vite
+# Movie Discovery Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive **Movie Discovery Web Application** built using **React.js** and **Tailwind CSS**, designed with a clean architecture and professional UI inspired by popular streaming platforms.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[https://movie-app-psi-six-77.vercel.app](https://movie-app-psi-six-77.vercel.app)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 Overview
 
-## Expanding the ESLint configuration
+This application allows users to explore popular movies, search in real time, filter movies by genre, and manage a personal watchlist. The project focuses on usability, performance, and maintainable frontend architecture.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+* Real-time movie search
+* Genre-based filtering with custom interactive UI
+* Add and remove movies from a watchlist
+* Pagination for browsing large datasets
+* Fully responsive design (mobile, tablet, desktop)
+* Clean and consistent dark-themed user interface
+
+---
+
+## 🛠 Tech Stack
+
+* **React.js** – Component-based UI development
+* **Tailwind CSS** – Utility-first styling
+* **JavaScript (ES6+)**
+* **Context API** – Global state management
+* **TMDB API** – Movie data source
+
+---
+
+## 🧱 Project Structure
+
+```
+src/
+├── components/      # Reusable UI components
+│   ├── Moviecard.jsx
+│   ├── GenreFilter.jsx
+│   └── Navbar.jsx
+├── context/         # Global state management
+│   └── WatchListContext.jsx
+├── pages/           # Application pages
+│   ├── Home.jsx
+│   └── WatchList.jsx
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## ⚙️ Key Implementation Details
+
+* Used **Context API** to manage watchlist and genre data globally
+* Implemented conditional rendering for dynamic UI states
+* Designed reusable components for scalability
+* Integrated TMDB REST API for fetching movie and genre data
+* Applied responsive design principles using Tailwind CSS
+
+---
+
+## 🚀 Getting Started (Local Setup)
+
+### Prerequisites
+
+* Node.js (v16 or above)
+* npm or yarn
+
+### Installation
+
+```bash
+npm install
+```
+
+### Run the Application
+
+```bash
+npm start
+```
+
+The app will run on:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🌱 Learning Outcomes
+
+* Practical experience with React hooks and Context API
+* Building clean, scalable component structures
+* Working with third-party APIs
+* Implementing professional UI/UX using Tailwind CSS
+* Managing application state effectively
+
+---
+
+## 📌 Future Improvements
+
+* Authentication and user profiles
+* Persisting watchlist using localStorage or backend
+* Advanced filtering and sorting options
+* Improved accessibility support
+
+---
+
+## 📄 License
+
+This project is for learning and demonstration purposes.
+
